@@ -7,7 +7,7 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World!\n 2171394 채민수\n');
+  res.end('Hello, World!\n 2171394 채민수의 실습\n');
 });
 
 server.listen(port, hostname, () => {
