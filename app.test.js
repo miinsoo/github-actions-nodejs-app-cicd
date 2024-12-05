@@ -14,7 +14,7 @@ describe('HTTP Server', () => {
       .get('/')
       .end((err, res) => {
         expect(res).to.have.status(200);
-        expect(res.text).to.equal('Hello, World!\n');
+        expect(res.text).to.equal('Hello, World!\n 2171394 채민수의 실습\n');
         done();
       });
   });
