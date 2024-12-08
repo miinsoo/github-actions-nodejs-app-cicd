@@ -9,12 +9,12 @@ const server = require('./app');
 chai.use(chaiHttp);
 
 describe('HTTP Server', () => {
-  it('should return "Hello, World!" when GET /', (done) => {
+  it('should return "Hello, World!\nRun 2171394 minsoo chae server\n" when GET /', (done) => {
     chai.request(server)
       .get('/')
       .end((err, res) => {
         expect(res).to.have.status(200);
-        expect(res.text).to.equal('Hello, World!\n');
+        expect(res.text).to.equal('Hello, World!\nRun 2171394 minsoo chae server\n');
         done();
       });
   });
